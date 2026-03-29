@@ -1,0 +1,24 @@
+{
+  "name": "proyectord-env",
+  "build": 
+  {
+    "dockerfile": "../Dockerfile"
+  },
+  "customizations": 
+  {
+    "vscode": 
+    {
+      "settings": 
+      {
+        "python.defaultInterpreterPath": "/usr/local/bin/python3"
+      },
+      "extensions": [
+        "ms-python.python",
+        "ms-toolsai.jupyter",
+        "ms-python.vscode-pylance"
+      ]
+    }
+  },
+  "forwardPorts": [8888],
+  "remoteUser": "root"
+}
