@@ -1,0 +1,26 @@
+# ---------------------------------
+# Datos y Modelos Pesados
+# ---------------------------------
+# Ignorar la carpeta de datos crudos y procesados
+data/
+
+# ---------------------------------
+# Entornos y Variables
+# ---------------------------------
+# Entornos virtuales
+venv/
+env/
+.env
+
+# ---------------------------------
+# Python y Jupyter Notebooks
+# ---------------------------------
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# ---------------------------------
+# Archivos de Sistema Operativo
+# ---------------------------------
+.DS_Store
+Thumbs.db
