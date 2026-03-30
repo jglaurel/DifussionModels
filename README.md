@@ -20,13 +20,10 @@ El objetivo principal es evaluar arquitecturas profundas temporales (CNN 1D, CNN
 ## 📑 Tabla de Contenidos
 1. [Descripción del Proyecto](#descripción-del-proyecto)
 2. [Cómo reproducir el proyecto](#cómo-reproducir-el-proyecto)
-3. [Ejecución de los Experimentos](#ejecución-de-los-experimentos)
-4. [Estructura del Repositorio y Resultados](#estructura-del-repositorio-y-resultados)
-5. [Resultados Principales](#resultados-principales)
 
 ---
 
-## 🔬 Descripción del Proyecto
+## Descripción del Proyecto
 El reconocimiento de actividades en condiciones de "vida libre" presenta desafíos como el desbalance severo de clases y la variabilidad inter-sujeto. En este proyecto:
 - Se procesan señales inerciales crudas (acelerómetros a 50Hz en muslo y espalda baja).
 - Se implementan funciones de pérdida robustas (Focal Loss) para manejar el desbalance.
@@ -34,26 +31,28 @@ El reconocimiento de actividades en condiciones de "vida libre" presenta desafí
 
 ---
 
-## 🚀 Cómo reproducir el proyecto
+## Cómo reproducir el proyecto
+**1. Bajar el dataset**
+Dado que el dataset que se uso es muy pesado se debe descargar desde la siguiente URL (https://archive.ics.uci.edu/dataset/779/harth) y ponerlo en una carpeta llamada data en formato zip 
 
-**1. Clonar el repositorio**
+**2. Clonar el repositorio**
 ```bash
 git clone [https://github.com/jglaurel/ProyectoRD.git](https://github.com/jglaurel/DifussionModels.git)
 ```
 
-**2. Abrir el proyecto en Visual Studio Code**
+**3. Abrir el proyecto en Visual Studio Code**
 Abre la carpeta del proyecto recién clonada en VS Code.
 
-**3. Extensiones necesarias en VS Code**
+**4. Extensiones necesarias en VS Code**
 Asegúrate de tener instaladas las siguientes extensiones desde la sección de extensiones (`Ctrl+Shift+X`):
 * **Dev Containers**
 * **Containers Tool** (Remote - Containers)
 
-**4. Instalar y ejecutar Docker**
+**5. Instalar y ejecutar Docker**
 * Instala Docker Desktop si no lo tienes en tu sistema.
 * Inicia Docker Desktop y asegúrate de que el motor (engine) esté en ejecución.
 
-**5. Crear y esperar el contenedor en VS Code**
+**6. Crear y esperar el contenedor en VS Code**
 * Al abrir la carpeta del proyecto, VS Code detectará la configuración y te sugerirá reabrir la carpeta en un contenedor (gracias al archivo `devcontainer.json`).
 * Haz clic en **"Reopen in Container"** (Reabrir en contenedor).
 * *Nota:* Este proceso puede tardar varios minutos la primera vez, ya que descargará la imagen base (con soporte para PyTorch/GPU) y configurará el entorno. VS Code mostrará el progreso; espera hasta que indique que el contenedor está listo y la terminal integrada esté conectada.
